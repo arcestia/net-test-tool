@@ -1,0 +1,42 @@
+{
+  "name": "net-test",
+  "version": "0.0.9",
+  "description": "OSX utility to test WiFi quality and save results for future reference.",
+  "preferGlobal": true,
+  "main": "cli.js",
+  "bin": "./cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chester1000/net-test.git"
+  },
+  "scripts": {
+    "prepublish": "coffee -cbm --no-header .",
+    "postpublish": "coffee postPublishCleanup.coffee",
+    "start": "coffee main.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "osx",
+    "mac",
+    "speedtest",
+    "internet",
+    "test",
+    "network"
+  ],
+  "author": "Damian Mee <mee.damian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.0",
+    "chalk": "^1.1.1",
+    "elegant-spinner": "^1.0.1",
+    "log-update": "^1.0.2",
+    "meow": "^3.4.2",
+    "parse": "^1.6.7",
+    "request": "^2.65.0",
+    "speed-test": "^1.5.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "fs-extended": "^0.2.1"
+  }
+}
