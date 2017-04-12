@@ -1,4 +1,5 @@
 # net-test
+## This Repository is Unmanaged because this tool will discontinued and no longer having support from me.
 
 > Test the quality of your wifi (using [speedtest.net](http://www.speedtest.net)) and get the results saved for future reference.
 
